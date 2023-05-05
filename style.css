@@ -1,0 +1,139 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html, body {
+    width: 100%;
+    height: 100%;
+}
+#main {
+    width: 100%;
+    height: 100%;
+    margin-left: auto;
+    margin-right: auto;
+}
+#grid {
+    justify-content: space-between;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    padding: 41px 50px;
+    gap: 10px;
+    width: 1168px;
+    height: auto;
+    background: #E9F8EF;
+    border: 0.5px solid #3B955F;
+    border-radius: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+}
+.gridFirst {
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    gap: 20px;
+   
+}
+.gridSecond {
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    gap: 20px;
+}
+.gridItem {
+    box-sizing: border-box;
+    position: relative;
+    width: 450px;
+    height: 148px;
+    background: #FFFFFF;
+    border: 0.5px solid #3B955F;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 20px 30px;
+}
+.gridItem:nth-child(2) {
+    box-sizing: border-box;
+    width: 288px;
+    height: 148px;
+    background: #FFFFFF;
+    border: 0.5px solid #3B955F;
+    border-radius: 10px;
+}
+.gridItem:nth-child(3) {
+    box-sizing: border-box;
+    width: 288px;
+    height: 148px;
+    background: #FFFFFF;
+    border: 0.5px solid #3B955F;
+    border-radius: 10px;
+}
+.gridItem h3 { 
+    font-family: 'Space Grotesk';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 30px;
+    line-height: 38px;
+    color: #000000;
+}
+#grid .gridItem p {
+    font-family: Space Grotesk;
+    font-size: 12px;
+    font-weight: 300;
+    line-height: 15px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #000000;
+}
+.price {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.oneGrid {
+    box-sizing: border-box !important;
+    width: 251px !important;
+    height: 148px !important;
+    background: #FFFFFF !important;
+    border: 0.5px solid #3B955F !important;
+    border-radius: 10px !important;
+}
+
+@media  (max-width: 768px) {
+    #main {
+        padding: 20px;
+    }
+    #grid {
+        width: 100%;
+            display: flex;
+    gap: 20px;
+        padding: 20px;
+    }
+    .gridItem {
+        width: 100% !important;
+    }
+    .oneGrid {
+        width: 100% !important;
+    }
+    .gridFirst {
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    gap: 20px;
+    flex-direction: column;
+        width: 100%;
+}
+.gridSecond {
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    gap: 20px;
+    flex-direction: column;
+        width: 100%;
+}
+}
